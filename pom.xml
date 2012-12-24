@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-tmpl</artifactId>
-    <version>beta1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>jQuery Templates plugin</name>
     <description>WebJar for jQuery Templates plugin</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/jquery-tmpl</url>
         <connection>scm:git:https://github.com/webjars/jquery-tmpl.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-tmpl.git</developerConnection>
-        <tag>jquery-tmpl-beta1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <dependencies>
