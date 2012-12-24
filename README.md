@@ -1,5 +1,5 @@
-WebJar for Highlight.js
+WebJar for jQuery Templates plugin
 
 More info: http://webjars.org
 
-Upstream: http://softwaremaniacs.org/soft/highlight/en/description/
+Upstream: https://github.com/jquery/jquery-tmpl

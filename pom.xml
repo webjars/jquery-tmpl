@@ -10,47 +10,47 @@
 
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
-    <artifactId>WEBJAR_ID</artifactId>
-    <version>UPSTREAM_VERSION-SNAPSHOT</version>
-    <name>WEBJAR_NAME</name>
-    <description>WebJar for WEBJAR_NAME</description>
+    <artifactId>jquery-tmpl</artifactId>
+    <version>beta1.0.0-SNAPSHOT</version>
+    <name>jQuery Templates plugin</name>
+    <description>WebJar for jQuery Templates plugin</description>
     <url>http://webjars.org</url>
 
     <developers>
         <developer>
-            <id>YOUR_ID</id>
-            <name>YOUR_NAME</name>
-            <email>YOUR_EMAIL</email>
+            <id>jamesward</id>
+            <name>James Ward</name>
+            <email>james@jamesward.org</email>
         </developer>
     </developers>
 
     <licenses>
         <license>
-            <name>UPSTREAM_LICENSE_NAME</name>
-            <url>UPSTREAM_LICENSE_VERSION</url>
+            <name>None</name>
+            <url>https://github.com/jquery/jquery-tmpl</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
     <scm>
-        <url>http://github.com/webjars/WEBJAR_ID</url>
-        <connection>scm:git:https://github.com/webjars/WEBJAR_ID.git</connection>
-        <developerConnection>scm:git:https://github.com/webjars/WEBJAR_ID.git</developerConnection>
+        <url>http://github.com/webjars/jquery-tmpl</url>
+        <connection>scm:git:https://github.com/webjars/jquery-tmpl.git</connection>
+        <developerConnection>scm:git:https://github.com/webjars/jquery-tmpl.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     
     <dependencies>
         <dependency>
             <groupId>org.webjars</groupId>
-            <artifactId>ANOTHER_WEBJAR_ID</artifactId>
-            <version>ANOTHER_WEBJAR_VERSION</version>
+            <artifactId>jquery</artifactId>
+            <version>1.8.3</version>
         </dependency>
     </dependencies>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>UPSTREAM_VERSION</upstream.version>
-        <upstream.url>UPSTREAM_URL</upstream.url>
+        <upstream.version>beta1.0.0</upstream.version>
+        <upstream.url>http://ajax.microsoft.com/ajax/jquery.templates/beta1</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
     
@@ -69,8 +69,8 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>WEBJAR_ID.js</fromFile>
-                            <toDir>${base.dir}</toDir>
+                            <fromFile>jquery.tmpl.js</fromFile>
+                            <toDir>${destDir}</toDir>
                         </configuration>
                     </execution>
                     <execution>
@@ -81,8 +81,8 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>WEBJAR_ID.min.js</fromFile>
-                            <toDir>${base.dir}</toDir>
+                            <fromFile>jquery.tmpl.min.js</fromFile>
+                            <toDir>${destDir}</toDir>
                         </configuration>
                     </execution>
                 </executions>
